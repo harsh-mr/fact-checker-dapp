@@ -1,0 +1,18 @@
+{
+    "function": {
+        "name": "risk_simple",
+        "description": "computes the average function_1s of a population"
+    },
+    "data": [
+        {
+            "name": "Datas_HA",
+            "description": "Datas of individuals from Authority A",
+            "provider": "Authority_A"
+        },
+        {
+            "name": "Beta_HA",
+            "description": "Beta values of heart conditions from Authority A",
+            "provider": "Authority_A"
+        }
+    ]
+}
