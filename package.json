@@ -1,0 +1,54 @@
+{
+    "name": "fact_fortress",
+    "version": "1.0.0",
+    "description": "",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Guillaume Lethuillier",
+            "url": "https://github.com/glethuillier"
+        },
+        {
+            "name": "Piergiuseppe Mallozzi",
+            "url": "https://github.com/pierg"
+        }
+    ],
+    "main": "src/index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "backend": "node src/index.js",
+        "frontend": "cd ./fact-fortress-frontend && pnpm run dev",
+        "generate-verifiers": "node tools/generateVerifiersSol.js",
+        "test": "pnpm generate-verifiers && truffle test",
+        "frontend:clean": "cd ./fact-fortress-frontend && pnpm run clean"
+    },
+    "dependencies": {
+        "@aztec/barretenberg": "^2.1.95",
+        "@ethersproject/abi": "^5.7.0",
+        "@ethersproject/providers": "^5.7.2",
+        "@noir-lang/barretenberg": "^2.19.0",
+        "@noir-lang/noir_wasm": "^0.10.0",
+        "@openzeppelin/contracts": "^4.8.3",
+        "@typechain/ethers-v5": "^10.2.0",
+        "@typechain/hardhat": "^6.1.5",
+        "@types/chai": "^4.3.5",
+        "@types/mocha": "^10.0.1",
+        "chai": "^4.3.7",
+        "chai-as-promised": "^7.1.1",
+        "cli-color": "^2.0.3",
+        "ethers": "^5.7.2",
+        "express": "^4.18.2",
+        "ganache": "^7.8.0",
+        "morgan": "^1.10.0",
+        "solc": "^0.8.19",
+        "solidity-coverage": "^0.8.2",
+        "truffle": "^5.8.4",
+        "web3": "^1.9.0"
+    },
+    "engines": {
+        "pnpm": ">=8.1.0",
+        "node": ">=18.15.0"
+    }
+}
