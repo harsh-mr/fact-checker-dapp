@@ -26,7 +26,7 @@ run:
 	echo "Waiting for the backend to be up and running..."
 	sleep 30
 	if [ ! -d "fact-fortress-frontend" ]; then \
-		git clone git@github.com:pierg/fact-fortress-frontend.git; \
+		git clone https://github.com/pierg/fact-fortress-frontend.git; \
 	fi
 	cd $(FRONTEND_DIR) && pnpm install
 	pnpm frontend &
