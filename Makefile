@@ -1,4 +1,4 @@
-FRONTEND_DIR = fact-fortress-frontend
+FRONTEND_DIR = truthify-web
 FRONTEND_URL = http://localhost:8080
 
 .PHONY: install run
@@ -25,8 +25,8 @@ run:
 	pnpm backend &
 	echo "Waiting for the backend to be up and running..."
 	sleep 30
-	if [ ! -d "fact-fortress-frontend" ]; then \
-		git clone https://github.com/pierg/fact-fortress-frontend.git; \
+	if [ ! -d "truthify-web" ]; then \
+		git clone https://github.com/Shreya23-tech/truthify-web.git; \
 	fi
 	cd $(FRONTEND_DIR) && pnpm install
 	pnpm frontend &
